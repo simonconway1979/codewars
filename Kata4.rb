@@ -5,5 +5,7 @@
 
 
 def validate_code(code)
-   
+ p !code.to_s[/\A[123]/].nil?
 end
+
+validate_code(2431234)
