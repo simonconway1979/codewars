@@ -4,7 +4,42 @@
 
 
 def vowel_one(s)
-    # your code here
+output = ""
+vowel = false
+arr = s.split("")
+vowels = ["a","e","i","o","u","A","E","I","O","U"]
 
-    return ''
+arr.each do |a|
+  vowels.each do |b|
+
+    if a == b
+      vowel = true
+    end
+  end
+if vowel == true
+  output << "1"
+else output << "0"
 end
+
+vowel = false
+
+#arr.each do |a|
+#  vowels.each do |vowel|
+#    if a == vowel 
+#      output >> "1"
+#    else
+#      output >> "0"
+
+#end
+#    return ''
+
+
+end
+
+
+
+puts output
+
+end
+
+vowel_one("AbEeCdiIoOuUSimo")
