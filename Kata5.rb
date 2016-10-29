@@ -4,35 +4,25 @@
 
 
 def vowel_one(s)
-output = ""
-vowel = false
-arr = s.split("")
-vowels = ["a","e","i","o","u","A","E","I","O","U"]
+  output = ""
+  vowel = false
+  arr = s.split("")
+  vowels = ["a","e","i","o","u","A","E","I","O","U"]
 
-arr.each do |a|
-  vowels.each do |b|
+    arr.each do |a|
+      vowels.each do |b|
 
-    if a == b
-      vowel = true
+        if a == b
+        vowel = true
+      end
     end
+
+    if vowel == true
+      output << "1"
+    else output << "0"
   end
-if vowel == true
-  output << "1"
-else output << "0"
-end
 
 vowel = false
-
-#arr.each do |a|
-#  vowels.each do |vowel|
-#    if a == vowel 
-#      output >> "1"
-#    else
-#      output >> "0"
-
-#end
-#    return ''
-
 
 end
 
