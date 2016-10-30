@@ -19,5 +19,37 @@
 
 
 def number_joy(n)
-    # your code
+
+@n = n
+@counter = 0
+@int_rev = 0
+
+def integer_total 
+     arr = @n.to_s.split("").map(&:to_i)
+     arr.each do |a| @counter += a
+      end     
 end
+
+def is_harshad
+@n%@counter == 0
+end  
+
+def integer_reversed
+@int_rev = @counter.to_s.reverse.to_i
+end
+
+def joyful_number
+return @n == @counter*@int_rev && @n%@counter == 0
+end
+  
+
+integer_total
+integer_reversed
+is_harshad
+joyful_number
+
+end
+
+
+
+number_joy(1729)
