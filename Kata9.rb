@@ -12,6 +12,15 @@
 
 
 def is_sorted_and_how(arr)
-    # your code here
-    return ''
+
+if arr == arr.sort
+puts "yes, ascending"  
+elsif arr == arr.sort.reverse
+  puts "yes, descending"
+else
+  puts "no"
 end
+
+end
+
+is_sorted_and_how([1, 2, 3, 4])
