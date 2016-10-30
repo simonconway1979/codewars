@@ -11,12 +11,46 @@
 
 
 def roof_fix(s,x)
-p  s_arr = s.split("")
-p  x_arr = x.split("")  
+@s_arr = s.split("")
+@x_arr = x.split("")  
+@s_arr_0_1 = ""
+@x_arr_0_1 = ""
   
-  
+def convert_roof_0_1  
+@s_arr.each.with_index do |a,b|
+  if 
+    a == " " 
+    @s_arr_0_1 << "#{b},"  
+  else
+    next  
+end
+end
+@new_compare = @s_arr_0_1.split(",").map(&:to_i)
 end
 
 
+def convert_old_roof_0_1
+@x_arr.each.with_index do |a,b|
+  if 
+    a == "\\" || a == "/"
+    @x_arr_0_1 << "#{b},"    
+  else
+    next
+end
+end
+@old_compare = @x_arr_0_1.split(",").map(&:to_i)
+end
 
-roof_fix('  l   f l k djmi k', '___\_____//_____/_')
+def compare_old_and_new
+p (@old_compare - @new_compare) == []
+end
+
+convert_roof_0_1
+convert_old_roof_0_1
+compare_old_and_new
+
+end
+
+
+roof_fix('    ikm il  h  llmmc   a i', '__\_______________________')
+
