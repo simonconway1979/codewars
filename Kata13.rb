@@ -6,5 +6,8 @@
 
 
 def dice(minimum, maximum)
-  #your code here
+p (minimum) + rand(maximum + 1 - minimum)
 end
+
+
+dice(2, 7)
