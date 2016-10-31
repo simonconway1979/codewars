@@ -26,5 +26,21 @@
 
 
 def tug_o_war(teams)
-  
+  team_1 = teams[0]
+  team_2 = teams[1]
+if  team_1.inject(:+) > team_2.inject(:+) 
+  puts "Team 1 wins!"
+elsif  team_1.inject(:+) < team_2.inject(:+) 
+  puts "Team 2 wins!"
+elsif
+  team_1[0] > team_2[4]
+    puts "Team 1 wins!"
+  elsif
+    team_1[0] < team_2[4]
+      puts "Team 2 wins!"
+  else
+    puts "It's a tie"    
+ end
 end
+
+tug_o_war([[5,4,3,2,1],[1,2,3,4,5]])
