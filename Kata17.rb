@@ -10,12 +10,13 @@
 
 
 def greet(name)
-  if greet == "" || greet ==  nil
-  return nil
+
+  if name == "" || name == nil
+  p nil
   else
-  return "test"
+    return "hello #{name}!"
   end
 
 end
 
-def greet("")
+greet("Simon")
