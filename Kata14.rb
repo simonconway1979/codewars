@@ -13,5 +13,7 @@
 #10 is the number that fits between 5 and 14 and the index of 10 in the input array is 1.
 
 def gimme(input_array)
-  #your code here
+p input_array.index(input_array.sort[1])
 end
+
+gimme([1, 2, 3])
