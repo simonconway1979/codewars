@@ -9,7 +9,9 @@
 
 
 def disemvowel(str)
-  str
-  
-  
+output = ""  
+str.each_char { |a| output << "#{a[/[^aeiouAEIOU]/]}"}  
+return output
 end
+
+disemvowel("back in the USSR!!")
