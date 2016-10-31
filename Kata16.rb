@@ -11,7 +11,25 @@
 
 
 def remove_rotten(fruitBasket) 
-  
-#remove rotten fruits please
+
+  fruitBasket = @fruitBasket
+
+  #rescue ArgumentError
+#remove_rotten([])  
+#end
+ 
+def fixed_fruit
+  @fixed_fruit = @fruitBasket.each.with_index do |a,b|
+  @fruitBasket[b] = a.downcase.gsub('rotten','')
+  end
+
+  p @fixed_fruit
 
 end
+
+fixed_fruit
+
+end
+
+remove_rotten(["apple", "rottenBanana"])
+
