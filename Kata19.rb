@@ -11,8 +11,17 @@
 
 
 def solution(number)
- # put your solution here
+arr = [*1..number-1]
+arr_2 = arr.map do |a,b| if a%3 == 0 || a%5 == 0 
+  a
+else 
+  
 end
+end     
+
+arr_2.reject! {|a| a.nil? }
+p arr_2.inject(:+)
+end 
 
 
-solution(25)
+solution(20)
